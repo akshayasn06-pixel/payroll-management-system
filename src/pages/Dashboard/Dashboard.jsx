@@ -3,16 +3,20 @@ import "./Dashboard.css";
 import WelcomeBanner from "./components/WelcomeBanner";
 import SummaryCards from "./components/SummaryCards";
 import RecentEmployees from "./components/RecentEmployees";
+import RecentActivity from "./components/RecentActivity";
 
 function Dashboard() {
   return (
     <div className="dashboard">
-  <WelcomeBanner name="Akshaya" />
+      <WelcomeBanner name="Akshaya" />
 
-  <SummaryCards />
+      <SummaryCards />
 
-  <RecentEmployees />
-</div>
+      <div className="dashboard-grid">
+        <RecentEmployees />
+        <RecentActivity />
+      </div>
+    </div>
   );
 }
 
