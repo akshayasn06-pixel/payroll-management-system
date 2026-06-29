@@ -1,0 +1,122 @@
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.welcome-banner {
+  background: var(--surface-color);
+  padding: var(--spacing-xl);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+}
+
+.welcome-banner h1 {
+  color: var(--text-primary);
+  font-size: 28px;
+  margin-bottom: var(--spacing-sm);
+}
+
+.welcome-banner p {
+  color: var(--text-secondary);
+  font-size: 16px;
+}
+
+.summary-cards {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: var(--spacing-lg);
+}
+
+.summary-card {
+  background: white;
+
+  border-radius: var(--border-radius);
+
+  padding: 24px;
+
+  box-shadow: var(--box-shadow);
+
+  display: flex;
+
+  gap: 20px;
+
+  transition: all .3s ease;
+}
+
+.summary-card:hover{
+    transform: translateY(-4px);
+}
+
+.summary-card__icon{
+
+    font-size:32px;
+
+}
+
+.summary-card__content h3{
+
+    font-size:15px;
+
+    color:var(--text-secondary);
+
+    margin-bottom:8px;
+}
+
+.summary-card__content h2{
+
+    font-size:28px;
+
+}
+
+.recent-employees {
+  background: var(--surface-color);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  padding: var(--spacing-lg);
+}
+
+.recent-employees h2 {
+  margin-bottom: var(--spacing-lg);
+  color: var(--text-primary);
+}
+
+.employee-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.employee-table th {
+  text-align: left;
+  padding: 14px;
+  border-bottom: 2px solid var(--border-color);
+  color: var(--text-secondary);
+}
+
+.employee-table td {
+  padding: 14px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.employee-table tbody tr:hover {
+  background: #f8fafc;
+}
+
+.status {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.active {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.leave {
+  background: #fef3c7;
+  color: #b45309;
+}

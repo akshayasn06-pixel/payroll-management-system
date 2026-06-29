@@ -1,0 +1,70 @@
+.navbar {
+  height: 70px;
+  background-color: var(--surface-color);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 24px;
+
+  border-bottom: 1px solid var(--border-color);
+  box-shadow: var(--box-shadow);
+
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar__left,
+.navbar__right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar__brand h2 {
+  color: var(--primary-color);
+  font-size: 22px;
+}
+
+.navbar__brand span {
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+.navbar__menu-btn,
+.navbar__icon {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 20px;
+  color: var(--text-primary);
+  transition: 0.3s ease;
+}
+
+.navbar__menu-btn:hover,
+.navbar__icon:hover {
+  color: var(--primary-color);
+}
+
+.navbar__profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.profile-icon {
+  font-size: 34px;
+  color: var(--primary-color);
+}
+
+.navbar__profile h4 {
+  font-size: 15px;
+}
+
+.navbar__profile span {
+  font-size: 12px;
+  color: var(--text-secondary);
+}
