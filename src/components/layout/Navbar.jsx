@@ -5,13 +5,16 @@ import {
   FaBars,
 } from "react-icons/fa";
 
-function Navbar() {
+function Navbar({ isSidebarOpen, setIsSidebarOpen }) {
   return (
     <header className="navbar">
 
       <div className="navbar__left">
 
-        <button className="navbar__menu-btn">
+        <button 
+        className="navbar__menu-btn"
+        onClick={() => setIsSidebarOpen(!isSidebarOpen)}
+        >
           <FaBars />
         </button>
 

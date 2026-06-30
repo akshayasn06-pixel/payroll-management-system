@@ -12,9 +12,11 @@ import {
   FaSignOutAlt,
 } from "react-icons/fa";
 
-function Sidebar() {
+function Sidebar({ isSidebarOpen }) {
   return (
-    <aside className="sidebar">
+    <aside 
+    className={`sidebar ${isSidebarOpen ? "sidebar--open" : ""}`}
+    >
 
       <div className="sidebar__top">
 

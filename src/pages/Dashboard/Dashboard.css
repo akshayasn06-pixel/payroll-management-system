@@ -178,3 +178,31 @@
 .activity-item small {
   color: var(--text-secondary);
 }
+
+/* ===========================
+   TABLET
+=========================== */
+
+@media (max-width: 1024px) {
+
+  .summary-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media (max-width: 768px) {
+
+  .summary-cards {
+    grid-template-columns: 1fr;
+  }
+
+}
